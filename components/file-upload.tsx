@@ -1,7 +1,6 @@
 "use client"
 import {UploadDropzone} from "@/lib/uploadthing"
 import "@uploadthing/react/styles.css"
-import { error } from "console";
 import { X } from "lucide-react"
 import Image from "next/image"
 
@@ -11,14 +10,12 @@ interface props {
     endpoint: "serverImage" | "messageFile"
 }
 
-const FileUpload = ({
+export const FileUpload = ({
     onChange,
     value,
     endpoint
 }:props) => {
     const fileTpe = value?.split(".").pop();
-    console.log(fileTpe);
-    console.log(value);    
     
     if(value && fileTpe!="pdf")
     {
@@ -51,5 +48,3 @@ const FileUpload = ({
         />
      );
 }
- 
-export default FileUpload;
