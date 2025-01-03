@@ -16,13 +16,15 @@ export async function PATCH(
             return new NextResponse("Unauthorized",{status:401})
         }
 
-        if(!params.serverId){
+        const {serverId} = await params;
+
+        if(!serverId){
             return new NextResponse("Server ID Missing",{status:400})
         }
 
         const server = await db.server.update({
             where:{
-                id: params.serverId,
+                id: serverId,
                 profileId: profile.id
             },
             data: {
