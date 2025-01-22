@@ -2,6 +2,10 @@
 
 bantR is a full-stack real-time communication platform designed to provide seamless messaging, server management, and multimedia interactions. Built with cutting-edge technologies, bantR aims to deliver a fast, scalable, and user-friendly experience.
 
+## Deployment
+
+You can view the deployed version of bantR at: [Your Deployment Link Here](https://bant-r.vercel.app/).
+
 ## Features
 
 - **Real-time Messaging**: Instant communication using WebSockets for a seamless chat experience.
