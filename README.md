@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# bantR
 
-## Getting Started
+bantR is a full-stack real-time communication platform designed to provide seamless messaging, server management, and multimedia interactions. Built with cutting-edge technologies, bantR aims to deliver a fast, scalable, and user-friendly experience.
 
-First, run the development server:
+## Features
+
+- **Real-time Messaging**: Instant communication using WebSockets for a seamless chat experience.
+- **Server and Channel Management**: Create and manage servers with text, audio, and video channels.
+- **User Roles and Permissions**: Support for roles like admin and moderator, with control over server settings and member permissions.
+- **File Sharing**: Upload and share files, including images and PDF documents.
+- **Infinite Scrolling**: Images load progressively as users scroll, optimizing performance.
+- **Dark and Light Mode**: Toggle between dark and light themes for a personalized experience.
+- **Video and Audio Chat**: Real-time video and audio calls powered by LiveKit.
+- **Direct Messaging**: Private one-on-one conversations.
+
+## Technologies Used
+
+- **Next.js 15**: Provides server-side rendering, API routes, and performance optimizations.
+- **React**: For building an interactive and responsive user interface.
+- **Socket.io**: Enables real-time, bidirectional communication between clients and servers.
+- **Prisma**: ORM for database interactions, simplifying data queries and management.
+- **Tailwind CSS**: Utility-first CSS framework for responsive and customizable designs.
+- **MySQL**: Relational database for storing user and server data, hosted via Aiven.
+- **Clerk**: Authentication and user management, including sign-up, sign-in, and account settings.
+- **UploadThing**: Secure and efficient file upload management.
+- **LiveKit**: Infrastructure for real-time video and audio calling features.
+- **Shadcn UI**: Simplifies the development of modern and accessible chat interfaces.
+
+## Setup Instructions
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/gagan-madhan-16/bantR.git
+cd bantR
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+
+- Create a `.env` file in the root directory a sample `.env.example` file is present in root directory.
+- Add the required variables for database connection, authentication (Clerk), and other integrations (LiveKit, UploadThing, etc.).
+
+4. Run database migrations:
+
+```bash
+npx prisma migrate dev
+```
+
+5. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open the application in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to [http://localhost:3000](http://localhost:3000/).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+Contributions are welcome! If you’d like to contribute, please follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git checkout -b feature/your-feature-name
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Commit your changes:
 
-## Deploy on Vercel
+```bash
+git commit -m "Add your commit message here"
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Push your branch:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+git push origin feature/your-feature-name
+```
+
+5. Open a pull request on GitHub.
