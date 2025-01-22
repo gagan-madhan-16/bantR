@@ -4,7 +4,7 @@ bantR is a full-stack real-time communication platform designed to provide seaml
 
 ## Deployment
 
-You can view the deployed version of bantR at: [Your Deployment Link Here](https://bant-r.vercel.app/).
+You can view the deployed version of bantR at: [bantR](https://bant-r.vercel.app/).
 
 ## Features
 
