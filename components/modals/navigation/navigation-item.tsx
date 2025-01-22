@@ -32,7 +32,7 @@ export function NavigationItem({
         >
             <button
             onClick={onClick}
-            className="group relative flex items-center"
+            className="group relative flex items-center py-2"
             >
                 <div className={cn(
                     "absolute left-0 bg-primary rounded-r-full transition-all w-[4px]",
