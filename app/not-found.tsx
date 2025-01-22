@@ -76,9 +76,9 @@ export default function NotFound() {
                 className="relative z-50 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-6 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20"
                 onClick={() => {router.push("/")}}
             >
-                <a href="/">
+                <Link href="/">
                     Return to Home
-                </a>
+                </Link>
             </Button>
         </div>
       </div>
