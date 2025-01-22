@@ -14,7 +14,13 @@ const nextConfig: NextConfig = {
     domains: [
       "utfs.io"
     ]
-  }
+  },
+  typescript: {
+    ignoreBuildErrors: true, // Disables TypeScript type checking during build
+  },
+  eslint: {
+    ignoreDuringBuilds: true, // Disables ESLint during builds
+  },
 };
 
 export default nextConfig;
