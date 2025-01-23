@@ -76,7 +76,7 @@ export async function DELETE(
         const {searchParams} = new URL(req.url);
 
         const serverId = searchParams.get("serverId")
-        const memberId = searchParams.get("memberId")
+        const memberId = params.memberId;
 
         if(!profile)
             return new NextResponse("Unauthorized",{status:401})
