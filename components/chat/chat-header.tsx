@@ -46,7 +46,7 @@ export const ChatHeader = ({
                         <ChatAudioButton />
                     </>
                 )}
-                <SocketIndicator />
+                {/* <SocketIndicator /> */}
             </div>
         </div>
     )
